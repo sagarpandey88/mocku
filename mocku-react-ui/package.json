@@ -1,0 +1,35 @@
+{
+  "name": "mocku-react",
+  "version": "1.0.0",
+  "description": "Mocku user interface",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-cli serve --mode=development --env development --open --hot",
+    "build": "webpack --mode=production --env production --progress",
+    "devstart": "npm run build  & npm run start",
+    "scss": "tsm ./src"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@emotion/react": "^11.8.2",
+    "@emotion/styled": "^11.8.1",
+    "@mui/material": "^5.5.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@types/react-dom": "^17.0.5",
+    "css-loader": "^5.2.5",
+    "html-webpack-plugin": "^5.3.1",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^11.1.1",
+    "style-loader": "^2.0.0",
+    "ts-loader": "^9.1.2",
+    "typed-scss-modules": "^4.1.1",
+    "typescript": "^4.2.4",
+    "webpack": "^5.37.1",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
